@@ -1,48 +1,37 @@
-import statistics
+## statistics.mode()
+most recuring element
 
-statistics.mode()
+## statistics.multimode()
+most recuring element (list if multiple)
 
-    most recuring element
+## random.randrange(1,100,2)
+rand odd number
 
-statistics.multimode()
+## math.comb(n, k)
+Return the number of ways to choose k items from n items without repetition and without order.
+Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates to zero when k > n.
+Also called the binomial coefficient because it is equivalent to the coefficient of k-th term in polynomial expansion of (1 + x)ⁿ.
 
-    most recuring element (list if multiple)
+## math.perm(n, k=None)
+Return the number of ways to choose k items from n items without repetition and with order.
+Evaluates to n! / (n - k)! when k <= n and evaluates to zero when k > n.
+If k is not specified or is None, then k defaults to n and the function returns n!.   
 
-random.randrange(1,100,2)
-    
-    rand odd number
+## math.fsum
+floating point accurate
 
-math.comb(n, k) math.perm() <- better cares about order
+## math.gcd(*integers)
+Return the greatest common divisor of the specified integer arguments.
+If any of the arguments is nonzero, then the returned value is the largest positive integer that is a divisor of all arguments.
+If all arguments are zero, then the returned value is 0. gcd() without arguments returns 0.
 
-    Return the number of ways to choose k items from n items without repetition and without order.
+## math.lcm()
+Return the least common multiple of the specified integer arguments.
+If all arguments are nonzero, then the returned value is the smallest positive integer that is a multiple of all arguments.
+If any of the arguments is zero, then the returned value is 0. lcm() without arguments returns 1.
 
-    Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates to zero when k > n.
-
-    Also called the binomial coefficient because it is equivalent to the coefficient of k-th term in polynomial expansion of (1 + x)ⁿ.
-
-    Raises TypeError if either of the arguments are not integers. Raises ValueError if either of the arguments are negative.
-    
-math.fsum
-
-    floating point accurate
-
-math.gcd(*integers)
-
-    Return the greatest common divisor of the specified integer arguments.
-    If any of the arguments is nonzero, then the returned value is the largest positive integer that is a divisor of all arguments.
-    If all arguments are zero, then the returned value is 0. gcd() without arguments returns 0.
-
-math.lcm()
-       
-    Return the least common multiple of the specified integer arguments.
-    If all arguments are nonzero, then the returned value is the smallest positive integer that is a multiple of all arguments.
-    If any of the arguments is zero, then the returned value is 0. lcm() without arguments returns 1.
-
-math.prod()
-
-    product of all items in an iterable + start value (1)
-  
-
+## math.prod()
+product of all items in an iterable + start value (1)
 
 ```python
 def merge_sort(lista):
