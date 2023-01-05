@@ -62,7 +62,9 @@ def merge_sort(lista):
             lista[i] = prawa[p]
             p += 1
             i += 1
-
+```
+---------------------------------
+```python
 def nwd(x,y): // or just math.gcd()
     if x > 0:
         return nwd(y, x%y)
@@ -70,12 +72,17 @@ def nwd(x,y): // or just math.gcd()
         return x
 # if more than 2 numbers:
 # nwd(a,b,c) == nwd(nwd(a,b),c)
-
+```
+---------------------------------
+```python
 def nww(x,y): // or just math.lcm() >= 3.9
     return (x*y)/nwd(x,y)
 
 
 # Function to find the partition position
+```
+---------------------------------
+```python
 def partition(array, low, high):
  
     # choose the rightmost element as pivot
@@ -103,8 +110,9 @@ def partition(array, low, high):
     return i + 1
  
 # function to perform quicksort
- 
- 
+```
+---------------------------------
+```python
 def quickSort(array, low, high):
     if low < high:
  
@@ -118,7 +126,9 @@ def quickSort(array, low, high):
  
         # Recursive call on the right of pivot
         quickSort(array, pi + 1, high)
- 
+```
+---------------------------------
+```python
  
 def SieveOfEratosthenes(num):
     prime = [True for _ in range(num+1)]
@@ -144,7 +154,9 @@ def SieveOfEratosthenes(num):
     # albo:
     # return prime
 
-
+```
+---------------------------------
+```python
 def isPrime(n):
     if n <= 1: return False
     if n <= 3: return True
@@ -160,7 +172,9 @@ def isPrime(n):
 # for num in SieveOfEratosthenes(1000):
 for num in range(100):
     print(num, isPrime(num))
-
+```
+---------------------------------
+```python
 
 def primeFactorization(n):
     for i in range(2,n + 1):
@@ -173,7 +187,9 @@ def primeFactorization(n):
             if(count == 1):
                 print(i)
     #TODO
-
+```
+---------------------------------
+```python
 print(primeFactorization(1024))
 
 def TwoColumnsTextImport():
