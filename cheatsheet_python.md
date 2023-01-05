@@ -186,4 +186,9 @@ def primeFactorization(n):
     #TODO
 
 print(primeFactorization(1024))
+
+def TwoColumnsTextImport():
+    for i in r:
+        col1.append(int(i.split(" ")[0]))
+        col2.append(int(i.split(" ")[1]))
 ```
