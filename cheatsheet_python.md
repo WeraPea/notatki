@@ -33,6 +33,7 @@ If any of the arguments is zero, then the returned value is 0. lcm() without arg
 ## math.prod()
 product of all items in an iterable + start value (1)
 
+## Merge sort
 ```python
 def merge_sort(lista):
     def larger(x, y): return x<y
@@ -82,6 +83,23 @@ def nww(x,y): // or just math.lcm() >= 3.9
 # Function to find the partition position
 ```
 ---------------------------------
+## Quick Sort
+```python
+def quickSort(array, low, high):
+    if low < high:
+ 
+        # Find pivot element such that
+        # element smaller than pivot are on the left
+        # element greater than pivot are on the right
+        pi = partition(array, low, high)
+ 
+        # Recursive call on the left of pivot
+        quickSort(array, low, pi - 1)
+ 
+        # Recursive call on the right of pivot
+        quickSort(array, pi + 1, high)
+```
+### partition 
 ```python
 def partition(array, low, high):
  
@@ -113,22 +131,6 @@ def partition(array, low, high):
 ```
 ---------------------------------
 ```python
-def quickSort(array, low, high):
-    if low < high:
- 
-        # Find pivot element such that
-        # element smaller than pivot are on the left
-        # element greater than pivot are on the right
-        pi = partition(array, low, high)
- 
-        # Recursive call on the left of pivot
-        quickSort(array, low, pi - 1)
- 
-        # Recursive call on the right of pivot
-        quickSort(array, pi + 1, high)
-```
----------------------------------
-```python
  
 def SieveOfEratosthenes(num):
     prime = [True for _ in range(num+1)]
@@ -156,6 +158,7 @@ def SieveOfEratosthenes(num):
 
 ```
 ---------------------------------
+## Is prime
 ```python
 def isPrime(n):
     if n <= 1: return False
@@ -198,6 +201,7 @@ def TwoColumnsTextImport():
         col2.append(int(i.split(" ")[1]))
 ```
 ---------------------------------
+## Depth First Search
 ```python
 def dfs(visited, graph, node):  #function for dfs 
     if node not in visited:
@@ -206,8 +210,8 @@ def dfs(visited, graph, node):  #function for dfs
         for neighbour in graph[node]:
             dfs(visited, graph, neighbour)
 ```
-
-Path finding
+---------------------------------
+## Path finding
 ```python
 def BFS_SP(graph, start, goal):
     explored = []
@@ -253,10 +257,9 @@ def BFS_SP(graph, start, goal):
                 "path doesn't exist :(")
     return
 ```
-
-
-# Edmonds-Karp Algorithm
-```
+---------------------------------
+## Edmonds-Karp Algorithm
+```python
 def max_flow(C, s, t):
     n = len(C)  # C is the capacity matrix
     F = [[0] * n for i in range(n)]
@@ -271,7 +274,7 @@ def max_flow(C, s, t):
     return sum(F[s][i] for i in range(n))
 ```
 
-# find path by using BFS
+### find path by using BFS
 ```python
 def bfs(C, F, s, t):
     queue = [s]
